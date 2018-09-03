@@ -75,6 +75,7 @@ with tf.Session() as sess:
             cur_cost = sess.run(cost, feed_dict={x: batch_xs, y: batch_ys})
             cur_acc = sess.run(acc, feed_dict={x: testing_x, y: testing_y})
             print(i, cur_cost, cur_acc)
+            print("asdada")
 
 
 
