@@ -7,10 +7,10 @@ import numpy as np
 from sklearn.preprocessing import LabelBinarizer
 import pandas as pd
 
-os.chdir(r"F:\zhangjianwei")
+os.chdir(r"D:\Python")
 
-data_x = pd.read_table("images.txt", delimiter=",", header=None)
-data_y = pd.read_table("labels.txt", delimiter=",", header=None)
+data_x = pd.read_table("ptest.txt", delimiter=",", header=None)
+data_y = pd.read_table("ptrain.txt", delimiter=",", header=None)
 
 arr_x = np.asarray(data_x, np.float32)
 arr_y = np.asarray(LabelBinarizer().fit_transform(data_y), np.float32)
