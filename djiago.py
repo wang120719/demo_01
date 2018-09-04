@@ -15,7 +15,7 @@ def maxSum(list):
             maxtmp += list[j]
             if maxtmp > maxsum:
                 maxsum = maxtmp
-                # print(maxsum)
+                print(maxsum)
     return maxsum
 
 if __name__ == '__main__':
